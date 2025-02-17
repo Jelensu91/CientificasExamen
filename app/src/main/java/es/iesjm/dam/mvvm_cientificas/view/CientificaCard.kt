@@ -1,6 +1,3 @@
-
-//Permite que cada tarjeta sea clicable para navegar a la pantalla de detalles.
-
 package es.iesjm.dam.mvvm_cientificas.view
 
 
@@ -27,10 +24,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import es.iesjm.dam.mvvm_cientificas.data.Cientificas
+import es.iesjm.dam.mvvm_cientificas.data.Cientifica
 
+// Esta función define una tarjeta (`Card`) que muestra información de una científica,
+// como su nombre y logros.
+// Al hacer clic en la tarjeta, se ejecuta la función `onClick()` que navega a la pantalla
+// de detalles de la científica.
 @Composable
-fun CientificaCard(cientifica: Cientificas, onClick: () -> Unit) {
+fun CientificaCard(cientifica: Cientifica, onClick: () -> Unit) {
     Card(
         modifier = Modifier
             .fillMaxWidth()

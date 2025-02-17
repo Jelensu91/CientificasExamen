@@ -28,6 +28,13 @@ import es.iesjm.dam.mvvm_cientificas.ui.theme.MVVM_CientificasTheme
 ***/
 
 
+// Esta es la actividad principal de la aplicación, que extiende `ComponentActivity`.
+// En el método `onCreate`, se configura el contenido de la actividad usando Jetpack Compose,
+//  aplicando el tema `MVVM_CientificasTheme`.
+// Se inicializa un controlador de navegación (`navController`) y se pasa a la función `AppNavigation`
+// para gestionar la navegación entre pantallas.
+
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
